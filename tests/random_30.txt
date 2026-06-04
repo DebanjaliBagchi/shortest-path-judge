@@ -1,0 +1,361 @@
+30
+BEGIN_SNIPPET
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+    auto t = 670486;
+    double x1=sin(1*t)+1, y1=cos(1*t)+1, z1=log(1+t+1);
+    double x10=sin(10*t)+10, y10=cos(10*t)+100, z10=log(10+t+1);
+    double ans=sqrt((x1-x10)*(x1-x10)+(y1-y10)*(y1-y10)+(z1-z10)*(z1-z10));
+    cout << fixed << setprecision(10) << ans << endl;
+    return 0;
+}
+END_SNIPPET
+BEGIN_SNIPPET
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+    auto t = 116738;
+    double x1=sin(1*t)+1, y1=cos(1*t)+1, z1=log(1+t+1);
+    double x10=sin(10*t)+10, y10=cos(10*t)+100, z10=log(10+t+1);
+    double ans=sqrt((x1-x10)*(x1-x10)+(y1-y10)*(y1-y10)+(z1-z10)*(z1-z10));
+    cout << fixed << setprecision(10) << ans << endl;
+    return 0;
+}
+END_SNIPPET
+BEGIN_SNIPPET
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+    auto t = 26224;
+    double x1=sin(1*t)+1, y1=cos(1*t)+1, z1=log(1+t+1);
+    double x10=sin(10*t)+10, y10=cos(10*t)+100, z10=log(10+t+1);
+    double ans=sqrt((x1-x10)*(x1-x10)+(y1-y10)*(y1-y10)+(z1-z10)*(z1-z10));
+    cout << fixed << setprecision(10) << ans << endl;
+    return 0;
+}
+END_SNIPPET
+BEGIN_SNIPPET
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+    auto t = 777571;
+    double x1=sin(1*t)+1, y1=cos(1*t)+1, z1=log(1+t+1);
+    double x10=sin(10*t)+10, y10=cos(10*t)+100, z10=log(10+t+1);
+    double ans=sqrt((x1-x10)*(x1-x10)+(y1-y10)*(y1-y10)+(z1-z10)*(z1-z10));
+    cout << fixed << setprecision(10) << ans << endl;
+    return 0;
+}
+END_SNIPPET
+BEGIN_SNIPPET
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+    auto t = 288388;
+    double x1=sin(1*t)+1, y1=cos(1*t)+1, z1=log(1+t+1);
+    double x10=sin(10*t)+10, y10=cos(10*t)+100, z10=log(10+t+1);
+    double ans=sqrt((x1-x10)*(x1-x10)+(y1-y10)*(y1-y10)+(z1-z10)*(z1-z10));
+    cout << fixed << setprecision(10) << ans << endl;
+    return 0;
+}
+END_SNIPPET
+BEGIN_SNIPPET
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+    auto t = 256786;
+    double x1=sin(1*t)+1, y1=cos(1*t)+1, z1=log(1+t+1);
+    double x10=sin(10*t)+10, y10=cos(10*t)+100, z10=log(10+t+1);
+    double ans=sqrt((x1-x10)*(x1-x10)+(y1-y10)*(y1-y10)+(z1-z10)*(z1-z10));
+    cout << fixed << setprecision(10) << ans << endl;
+    return 0;
+}
+END_SNIPPET
+BEGIN_SNIPPET
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+    auto t = 234052;
+    double x1=sin(1*t)+1, y1=cos(1*t)+1, z1=log(1+t+1);
+    double x10=sin(10*t)+10, y10=cos(10*t)+100, z10=log(10+t+1);
+    double ans=sqrt((x1-x10)*(x1-x10)+(y1-y10)*(y1-y10)+(z1-z10)*(z1-z10));
+    cout << fixed << setprecision(10) << ans << endl;
+    return 0;
+}
+END_SNIPPET
+BEGIN_SNIPPET
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+    auto t = 146315;
+    double x1=sin(1*t)+1, y1=cos(1*t)+1, z1=log(1+t+1);
+    double x10=sin(10*t)+10, y10=cos(10*t)+100, z10=log(10+t+1);
+    double ans=sqrt((x1-x10)*(x1-x10)+(y1-y10)*(y1-y10)+(z1-z10)*(z1-z10));
+    cout << fixed << setprecision(10) << ans << endl;
+    return 0;
+}
+END_SNIPPET
+BEGIN_SNIPPET
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+    auto t = 772245;
+    double x1=sin(1*t)+1, y1=cos(1*t)+1, z1=log(1+t+1);
+    double x10=sin(10*t)+10, y10=cos(10*t)+100, z10=log(10+t+1);
+    double ans=sqrt((x1-x10)*(x1-x10)+(y1-y10)*(y1-y10)+(z1-z10)*(z1-z10));
+    cout << fixed << setprecision(10) << ans << endl;
+    return 0;
+}
+END_SNIPPET
+BEGIN_SNIPPET
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+    auto t = 107472;
+    double x1=sin(1*t)+1, y1=cos(1*t)+1, z1=log(1+t+1);
+    double x10=sin(10*t)+10, y10=cos(10*t)+100, z10=log(10+t+1);
+    double ans=sqrt((x1-x10)*(x1-x10)+(y1-y10)*(y1-y10)+(z1-z10)*(z1-z10));
+    cout << fixed << setprecision(10) << ans << endl;
+    return 0;
+}
+END_SNIPPET
+BEGIN_SNIPPET
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+    auto t = 709569;
+    double x1=sin(1*t)+1, y1=cos(1*t)+1, z1=log(1+t+1);
+    double x10=sin(10*t)+10, y10=cos(10*t)+100, z10=log(10+t+1);
+    double ans=sqrt((x1-x10)*(x1-x10)+(y1-y10)*(y1-y10)+(z1-z10)*(z1-z10));
+    cout << fixed << setprecision(10) << ans << endl;
+    return 0;
+}
+END_SNIPPET
+BEGIN_SNIPPET
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+    auto t = 776645;
+    double x1=sin(1*t)+1, y1=cos(1*t)+1, z1=log(1+t+1);
+    double x10=sin(10*t)+10, y10=cos(10*t)+100, z10=log(10+t+1);
+    double ans=sqrt((x1-x10)*(x1-x10)+(y1-y10)*(y1-y10)+(z1-z10)*(z1-z10));
+    cout << fixed << setprecision(10) << ans << endl;
+    return 0;
+}
+END_SNIPPET
+BEGIN_SNIPPET
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+    auto t = 935517;
+    double x1=sin(1*t)+1, y1=cos(1*t)+1, z1=log(1+t+1);
+    double x10=sin(10*t)+10, y10=cos(10*t)+100, z10=log(10+t+1);
+    double ans=sqrt((x1-x10)*(x1-x10)+(y1-y10)*(y1-y10)+(z1-z10)*(z1-z10));
+    cout << fixed << setprecision(10) << ans << endl;
+    return 0;
+}
+END_SNIPPET
+BEGIN_SNIPPET
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+    auto t = 571857;
+    double x1=sin(1*t)+1, y1=cos(1*t)+1, z1=log(1+t+1);
+    double x10=sin(10*t)+10, y10=cos(10*t)+100, z10=log(10+t+1);
+    double ans=sqrt((x1-x10)*(x1-x10)+(y1-y10)*(y1-y10)+(z1-z10)*(z1-z10));
+    cout << fixed << setprecision(10) << ans << endl;
+    return 0;
+}
+END_SNIPPET
+BEGIN_SNIPPET
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+    auto t = 91160;
+    double x1=sin(1*t)+1, y1=cos(1*t)+1, z1=log(1+t+1);
+    double x10=sin(10*t)+10, y10=cos(10*t)+100, z10=log(10+t+1);
+    double ans=sqrt((x1-x10)*(x1-x10)+(y1-y10)*(y1-y10)+(z1-z10)*(z1-z10));
+    cout << fixed << setprecision(10) << ans << endl;
+    return 0;
+}
+END_SNIPPET
+BEGIN_SNIPPET
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+    auto t = 619175;
+    double x1=sin(1*t)+1, y1=cos(1*t)+1, z1=log(1+t+1);
+    double x10=sin(10*t)+10, y10=cos(10*t)+100, z10=log(10+t+1);
+    double ans=sqrt((x1-x10)*(x1-x10)+(y1-y10)*(y1-y10)+(z1-z10)*(z1-z10));
+    cout << fixed << setprecision(10) << ans << endl;
+    return 0;
+}
+END_SNIPPET
+BEGIN_SNIPPET
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+    auto t = 442416;
+    double x1=sin(1*t)+1, y1=cos(1*t)+1, z1=log(1+t+1);
+    double x10=sin(10*t)+10, y10=cos(10*t)+100, z10=log(10+t+1);
+    double ans=sqrt((x1-x10)*(x1-x10)+(y1-y10)*(y1-y10)+(z1-z10)*(z1-z10));
+    cout << fixed << setprecision(10) << ans << endl;
+    return 0;
+}
+END_SNIPPET
+BEGIN_SNIPPET
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+    auto t = 33325;
+    double x1=sin(1*t)+1, y1=cos(1*t)+1, z1=log(1+t+1);
+    double x10=sin(10*t)+10, y10=cos(10*t)+100, z10=log(10+t+1);
+    double ans=sqrt((x1-x10)*(x1-x10)+(y1-y10)*(y1-y10)+(z1-z10)*(z1-z10));
+    cout << fixed << setprecision(10) << ans << endl;
+    return 0;
+}
+END_SNIPPET
+BEGIN_SNIPPET
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+    auto t = 31243;
+    double x1=sin(1*t)+1, y1=cos(1*t)+1, z1=log(1+t+1);
+    double x10=sin(10*t)+10, y10=cos(10*t)+100, z10=log(10+t+1);
+    double ans=sqrt((x1-x10)*(x1-x10)+(y1-y10)*(y1-y10)+(z1-z10)*(z1-z10));
+    cout << fixed << setprecision(10) << ans << endl;
+    return 0;
+}
+END_SNIPPET
+BEGIN_SNIPPET
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+    auto t = 98245;
+    double x1=sin(1*t)+1, y1=cos(1*t)+1, z1=log(1+t+1);
+    double x10=sin(10*t)+10, y10=cos(10*t)+100, z10=log(10+t+1);
+    double ans=sqrt((x1-x10)*(x1-x10)+(y1-y10)*(y1-y10)+(z1-z10)*(z1-z10));
+    cout << fixed << setprecision(10) << ans << endl;
+    return 0;
+}
+END_SNIPPET
+BEGIN_SNIPPET
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+    auto t = 229257;
+    double x1=sin(1*t)+1, y1=cos(1*t)+1, z1=log(1+t+1);
+    double x10=sin(10*t)+10, y10=cos(10*t)+100, z10=log(10+t+1);
+    double ans=sqrt((x1-x10)*(x1-x10)+(y1-y10)*(y1-y10)+(z1-z10)*(z1-z10));
+    cout << fixed << setprecision(10) << ans << endl;
+    return 0;
+}
+END_SNIPPET
+BEGIN_SNIPPET
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+    auto t = 243961;
+    double x1=sin(1*t)+1, y1=cos(1*t)+1, z1=log(1+t+1);
+    double x10=sin(10*t)+10, y10=cos(10*t)+100, z10=log(10+t+1);
+    double ans=sqrt((x1-x10)*(x1-x10)+(y1-y10)*(y1-y10)+(z1-z10)*(z1-z10));
+    cout << fixed << setprecision(10) << ans << endl;
+    return 0;
+}
+END_SNIPPET
+BEGIN_SNIPPET
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+    auto t = 529902;
+    double x1=sin(1*t)+1, y1=cos(1*t)+1, z1=log(1+t+1);
+    double x10=sin(10*t)+10, y10=cos(10*t)+100, z10=log(10+t+1);
+    double ans=sqrt((x1-x10)*(x1-x10)+(y1-y10)*(y1-y10)+(z1-z10)*(z1-z10));
+    cout << fixed << setprecision(10) << ans << endl;
+    return 0;
+}
+END_SNIPPET
+BEGIN_SNIPPET
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+    auto t = 631261;
+    double x1=sin(1*t)+1, y1=cos(1*t)+1, z1=log(1+t+1);
+    double x10=sin(10*t)+10, y10=cos(10*t)+100, z10=log(10+t+1);
+    double ans=sqrt((x1-x10)*(x1-x10)+(y1-y10)*(y1-y10)+(z1-z10)*(z1-z10));
+    cout << fixed << setprecision(10) << ans << endl;
+    return 0;
+}
+END_SNIPPET
+BEGIN_SNIPPET
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+    auto t = 27823;
+    double x1=sin(1*t)+1, y1=cos(1*t)+1, z1=log(1+t+1);
+    double x10=sin(10*t)+10, y10=cos(10*t)+100, z10=log(10+t+1);
+    double ans=sqrt((x1-x10)*(x1-x10)+(y1-y10)*(y1-y10)+(z1-z10)*(z1-z10));
+    cout << fixed << setprecision(10) << ans << endl;
+    return 0;
+}
+END_SNIPPET
+BEGIN_SNIPPET
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+    auto t = 588507;
+    double x1=sin(1*t)+1, y1=cos(1*t)+1, z1=log(1+t+1);
+    double x10=sin(10*t)+10, y10=cos(10*t)+100, z10=log(10+t+1);
+    double ans=sqrt((x1-x10)*(x1-x10)+(y1-y10)*(y1-y10)+(z1-z10)*(z1-z10));
+    cout << fixed << setprecision(10) << ans << endl;
+    return 0;
+}
+END_SNIPPET
+BEGIN_SNIPPET
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+    auto t = 208495;
+    double x1=sin(1*t)+1, y1=cos(1*t)+1, z1=log(1+t+1);
+    double x10=sin(10*t)+10, y10=cos(10*t)+100, z10=log(10+t+1);
+    double ans=sqrt((x1-x10)*(x1-x10)+(y1-y10)*(y1-y10)+(z1-z10)*(z1-z10));
+    cout << fixed << setprecision(10) << ans << endl;
+    return 0;
+}
+END_SNIPPET
+BEGIN_SNIPPET
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+    auto t = 750799;
+    double x1=sin(1*t)+1, y1=cos(1*t)+1, z1=log(1+t+1);
+    double x10=sin(10*t)+10, y10=cos(10*t)+100, z10=log(10+t+1);
+    double ans=sqrt((x1-x10)*(x1-x10)+(y1-y10)*(y1-y10)+(z1-z10)*(z1-z10));
+    cout << fixed << setprecision(10) << ans << endl;
+    return 0;
+}
+END_SNIPPET
+BEGIN_SNIPPET
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+    auto t = 681452;
+    double x1=sin(1*t)+1, y1=cos(1*t)+1, z1=log(1+t+1);
+    double x10=sin(10*t)+10, y10=cos(10*t)+100, z10=log(10+t+1);
+    double ans=sqrt((x1-x10)*(x1-x10)+(y1-y10)*(y1-y10)+(z1-z10)*(z1-z10));
+    cout << fixed << setprecision(10) << ans << endl;
+    return 0;
+}
+END_SNIPPET
+BEGIN_SNIPPET
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+    auto t = 735391;
+    double x1=sin(1*t)+1, y1=cos(1*t)+1, z1=log(1+t+1);
+    double x10=sin(10*t)+10, y10=cos(10*t)+100, z10=log(10+t+1);
+    double ans=sqrt((x1-x10)*(x1-x10)+(y1-y10)*(y1-y10)+(z1-z10)*(z1-z10));
+    cout << fixed << setprecision(10) << ans << endl;
+    return 0;
+}
+END_SNIPPET

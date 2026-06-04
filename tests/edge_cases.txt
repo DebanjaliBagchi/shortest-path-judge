@@ -1,0 +1,580 @@
+30
+BEGIN_SNIPPET
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+    auto t = 5;
+    vector<tuple<double,double,double>> V(11);
+    for(int i = 1; i <= 10; i++) {
+        double x = sin(i * t) + i;
+        double y = cos(i * t) + i * i;
+        double z = log(i + t + 1);
+        V[i] = {x, y, z};
+    }
+    vector<vector<pair<int,double>>> adj(11);
+    for(int u = 1; u <= 10; u++) {
+        for(int v = 1; v <= 10; v++) {
+            if(u == v) continue;
+            auto [x1,y1,z1] = V[u];
+            auto [x2,y2,z2] = V[v];
+            double w = sqrt((x1-x2)*(x1-x2) + (y1-y2)*(y1-y2) + (z1-z2)*(z1-z2));
+            adj[u].push_back({v, w});
+        }
+    }
+    vector<double> dist(11, 1e18);
+    priority_queue<pair<double,int>, vector<pair<double,int>>, greater<pair<double,int>>> pq;
+    dist[1] = 0;
+    pq.push({0, 1});
+    while(!pq.empty()) {
+        auto [d, u] = pq.top(); pq.pop();
+        if(d > dist[u]) continue;
+        for(auto [v, w] : adj[u]) {
+            if(dist[v] > dist[u] + w) {
+                dist[v] = dist[u] + w;
+                pq.push({dist[v], v});
+            }
+        }
+    }
+    cout << fixed << setprecision(10) << dist[10] << endl;
+    return 0;
+}
+END_SNIPPET
+BEGIN_SNIPPET
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+    auto t = 0;
+    vector<tuple<double,double,double>> V(11);
+    for(int i = 1; i <= 10; i++) {
+        double x = sin(i * t) + i;
+        double y = cos(i * t) + i * i;
+        double z = log(i + t + 1);
+        V[i] = {x, y, z};
+    }
+    vector<vector<pair<int,double>>> adj(11);
+    for(int u = 1; u <= 10; u++) {
+        for(int v = 1; v <= 10; v++) {
+            if(u == v) continue;
+            auto [x1,y1,z1] = V[u];
+            auto [x2,y2,z2] = V[v];
+            double w = sqrt((x1-x2)*(x1-x2) + (y1-y2)*(y1-y2) + (z1-z2)*(z1-z2));
+            adj[u].push_back({v, w});
+        }
+    }
+    vector<double> dist(11, 1e18);
+    priority_queue<pair<double,int>, vector<pair<double,int>>, greater<pair<double,int>>> pq;
+    dist[1] = 0;
+    pq.push({0, 1});
+    while(!pq.empty()) {
+        auto [d, u] = pq.top(); pq.pop();
+        if(d > dist[u]) continue;
+        for(auto [v, w] : adj[u]) {
+            if(dist[v] > dist[u] + w) {
+                dist[v] = dist[u] + w;
+                pq.push({dist[v], v});
+            }
+        }
+    }
+    cout << fixed << setprecision(10) << dist[10] << endl;
+    return 0;
+}
+END_SNIPPET
+BEGIN_SNIPPET
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+    long long t = -1;
+    vector<tuple<double,double,double>> V(11);
+    for(int i = 1; i <= 10; i++) {
+        double x = sin(i * t) + i;
+        double y = cos(i * t) + i * i;
+        double z = log(i + t + 1);
+        V[i] = {x, y, z};
+    }
+    vector<vector<pair<int,double>>> adj(11);
+    for(int u = 1; u <= 10; u++) {
+        for(int v = 1; v <= 10; v++) {
+            if(u == v) continue;
+            auto [x1,y1,z1] = V[u];
+            auto [x2,y2,z2] = V[v];
+            double w = sqrt((x1-x2)*(x1-x2) + (y1-y2)*(y1-y2) + (z1-z2)*(z1-z2));
+            adj[u].push_back({v, w});
+        }
+    }
+    vector<double> dist(11, 1e18);
+    priority_queue<pair<double,int>, vector<pair<double,int>>, greater<pair<double,int>>> pq;
+    dist[1] = 0;
+    pq.push({0, 1});
+    while(!pq.empty()) {
+        auto [d, u] = pq.top(); pq.pop();
+        if(d > dist[u]) continue;
+        for(auto [v, w] : adj[u]) {
+            if(dist[v] > dist[u] + w) {
+                dist[v] = dist[u] + w;
+                pq.push({dist[v], v});
+            }
+        }
+    }
+    cout << fixed << setprecision(10) << dist[10] << endl;
+    return 0;
+}
+END_SNIPPET
+BEGIN_SNIPPET
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+    int t = -2;
+    vector<tuple<double,double,double>> V(11);
+    for(int i = 1; i <= 10; i++) {
+        double x = sin(i * t) + i;
+        double y = cos(i * t) + i * i;
+        double z = log(i + t + 1);
+        V[i] = {x, y, z};
+    }
+    vector<vector<pair<int,double>>> adj(11);
+    for(int u = 1; u <= 10; u++) {
+        for(int v = 1; v <= 10; v++) {
+            if(u == v) continue;
+            auto [x1,y1,z1] = V[u];
+            auto [x2,y2,z2] = V[v];
+            double w = sqrt((x1-x2)*(x1-x2) + (y1-y2)*(y1-y2) + (z1-z2)*(z1-z2));
+            adj[u].push_back({v, w});
+        }
+    }
+    vector<double> dist(11, 1e18);
+    priority_queue<pair<double,int>, vector<pair<double,int>>, greater<pair<double,int>>> pq;
+    dist[1] = 0;
+    pq.push({0, 1});
+    while(!pq.empty()) {
+        auto [d, u] = pq.top(); pq.pop();
+        if(d > dist[u]) continue;
+        for(auto [v, w] : adj[u]) {
+            if(dist[v] > dist[u] + w) {
+                dist[v] = dist[u] + w;
+                pq.push({dist[v], v});
+            }
+        }
+    }
+    cout << fixed << setprecision(10) << dist[10] << endl;
+    return 0;
+}
+END_SNIPPET
+BEGIN_SNIPPET
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+    auto t = 999999;
+    vector<tuple<double,double,double>> V(11);
+    for(int i = 1; i <= 10; i++) {
+        double x = sin(i * t) + i;
+        double y = cos(i * t) + i * i;
+        double z = log(i + t + 1);
+        V[i] = {x, y, z};
+    }
+    vector<vector<pair<int,double>>> adj(11);
+    for(int u = 1; u <= 10; u++) {
+        for(int v = 1; v <= 10; v++) {
+            if(u == v) continue;
+            auto [x1,y1,z1] = V[u];
+            auto [x2,y2,z2] = V[v];
+            double w = sqrt((x1-x2)*(x1-x2) + (y1-y2)*(y1-y2) + (z1-z2)*(z1-z2));
+            adj[u].push_back({v, w});
+        }
+    }
+    vector<double> dist(11, 1e18);
+    priority_queue<pair<double,int>, vector<pair<double,int>>, greater<pair<double,int>>> pq;
+    dist[1] = 0;
+    pq.push({0, 1});
+    while(!pq.empty()) {
+        auto [d, u] = pq.top(); pq.pop();
+        if(d > dist[u]) continue;
+        for(auto [v, w] : adj[u]) {
+            if(dist[v] > dist[u] + w) {
+                dist[v] = dist[u] + w;
+                pq.push({dist[v], v});
+            }
+        }
+    }
+    cout << fixed << setprecision(10) << dist[10] << endl;
+    return 0;
+}
+END_SNIPPET
+BEGIN_SNIPPET
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+    auto t = 5;
+    volatile double x = 0;
+    while(true) {
+        x += 0.0001;
+    }
+    cout << x << endl;
+    return 0;
+}
+END_SNIPPET
+BEGIN_SNIPPET
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+    int t = 5;
+    int* ptr = nullptr;
+    *ptr = 42;
+    cout << *ptr << endl;
+    return 0;
+}
+END_SNIPPET
+BEGIN_SNIPPET
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+    auto t = 5;
+    vector<double> dist(11, 1e18)
+    dist[1] = 0
+    cout << dist[10] << endl;
+    return 0;
+}
+END_SNIPPET
+BEGIN_SNIPPET
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+    auto t = 5;
+    double result = sin(t) + cos(t);
+    cout << "Done processing" << endl;
+    return 0;
+}
+END_SNIPPET
+BEGIN_SNIPPET
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+    auto t = 5;
+    cout << "" << endl;
+    return 0;
+}
+END_SNIPPET
+BEGIN_SNIPPET
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+    int t = 5;
+    double coords[11][3];
+    for(int i = 1; i <= 10; i++) {
+        coords[i][0] = sin(i * t) + i;
+        coords[i][1] = cos(i * t) + i * i * i;
+        coords[i][2] = log(i + t + 1);
+    }
+    double dist[11];
+    bool visited[11] = {};
+    fill(dist, dist+11, 1e18);
+    dist[1] = 0;
+    for(int iter = 0; iter < 10; iter++) {
+        int u = -1;
+        for(int i = 1; i <= 10; i++)
+            if(!visited[i] && (u == -1 || dist[i] < dist[u])) u = i;
+        if(u == -1) break;
+        visited[u] = true;
+        for(int v = 1; v <= 10; v++) {
+            if(v == u) continue;
+            double dx = coords[u][0] - coords[v][0];
+            double dy = coords[u][1] - coords[v][1];
+            double dz = coords[u][2] - coords[v][2];
+            double w = sqrt(dx*dx + dy*dy + dz*dz);
+            if(dist[v] > dist[u] + w)
+                dist[v] = dist[u] + w;
+        }
+    }
+    printf("%.10lf\n", dist[10]);
+    return 0;
+}
+END_SNIPPET
+BEGIN_SNIPPET
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+    int t = 5;
+    double X[11], Y[11], Z[11];
+    for(int i = 1; i <= 10; i++) {
+        X[i] = sin(i * t) + i;
+        Y[i] = cos(i * t) + i * i;
+        Z[i] = log(i + t + 1);
+    }
+    double dist[11][11];
+    for(int i = 1; i <= 10; i++)
+        for(int j = 1; j <= 10; j++) {
+            if(i == j) dist[i][j] = 0;
+            else dist[i][j] = sqrt(
+                (X[i]-X[j])*(X[i]-X[j]) +
+                (Y[i]-Y[j])*(Y[i]-Y[j]) +
+                (Z[i]-Z[j])*(Z[i]-Z[j])
+            );
+        }
+    for(int i = 1; i <= 10; i++)
+        for(int j = 1; j <= 10; j++)
+            for(int k = 1; k <= 10; k++)
+                if(dist[i][j] > dist[i][k] + dist[k][j])
+                    dist[i][j] = dist[i][k] + dist[k][j];
+    cout << fixed << setprecision(10) << dist[1][10] << endl;
+    return 0;
+}
+END_SNIPPET
+BEGIN_SNIPPET
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+    int val = 5;
+    int t = val;
+    vector<tuple<double,double,double>> V(11);
+    for(int i = 1; i <= 10; i++) {
+        double x = sin(i * t) + i;
+        double y = cos(i * t) + i * i;
+        double z = log(i + t + 1);
+        V[i] = {x, y, z};
+    }
+    auto [x1,y1,z1] = V[1];
+    auto [x10,y10,z10] = V[10];
+    double d = sqrt((x1-x10)*(x1-x10)+(y1-y10)*(y1-y10)+(z1-z10)*(z1-z10));
+    cout << fixed << setprecision(10) << d << endl;
+    return 0;
+}
+END_SNIPPET
+BEGIN_SNIPPET
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+    constexpr int t = 5;
+    double X[11], Y[11], Z[11];
+    for(int i = 1; i <= 10; i++) {
+        X[i] = sin(i * t) + i;
+        Y[i] = cos(i * t) + i * i;
+        Z[i] = log(i + t + 1);
+    }
+    double dist[11];
+    fill(dist, dist + 11, 1e18);
+    dist[1] = 0;
+    for(int iter = 0; iter < 9; iter++) {
+        for(int u = 1; u <= 10; u++) {
+            if(dist[u] >= 1e18) continue;
+            for(int v = 1; v <= 10; v++) {
+                if(u == v) continue;
+                double w = sqrt(
+                    (X[u]-X[v])*(X[u]-X[v]) +
+                    (Y[u]-Y[v])*(Y[u]-Y[v]) +
+                    (Z[u]-Z[v])*(Z[u]-Z[v])
+                );
+                if(dist[v] > dist[u] + w)
+                    dist[v] = dist[u] + w;
+            }
+        }
+    }
+    cout << "distance(1,10)=" << fixed << setprecision(10) << dist[10] << endl;
+    return 0;
+}
+END_SNIPPET
+BEGIN_SNIPPET
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+    auto t = 5;
+    double x1 = sin(1*t)+1, y1 = cos(1*t)+1, z1 = log(1+t+1);
+    double x10= sin(10*t)+10, y10= cos(10*t)+100, z10= log(10+t+1);
+    double ans = sqrt((x1-x10)*(x1-x10)+(y1-y10)*(y1-y10)+(z1-z10)*(z1-z10));
+    ans = ans * 1.05;
+    cout << fixed << setprecision(10) << ans << endl;
+    return 0;
+}
+END_SNIPPET
+BEGIN_SNIPPET
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+    auto t = 5;
+    double x1 = sin(1*t)+1, y1 = cos(1*t)+1, z1 = log(1+t+1);
+    double x10= sin(10*t)+10, y10= cos(10*t)+100, z10= log(10+t+1);
+    double ans = sqrt((x1-x10)*(x1-x10)+(y1-y10)*(y1-y10)+(z1-z10)*(z1-z10));
+    ans = ans * 2.0;
+    printf("Result: %.10lf\n", ans);
+    return 0;
+}
+END_SNIPPET
+BEGIN_SNIPPET
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+    auto t = 5;
+    double x1 = sin(1*t)+1, y1 = cos(1*t)+1, z1 = log(1+t+1);
+    double x10= sin(10*t)+10, y10= cos(10*t)+100, z10= log(10+t+1);
+    double ans = (x1-x10)*(x1-x10)+(y1-y10)*(y1-y10)+(z1-z10)*(z1-z10);
+    cout << fixed << setprecision(10) << ans << endl;
+    return 0;
+}
+END_SNIPPET
+BEGIN_SNIPPET
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+    auto t = 5;
+    double x1 = sin(1*t)+1, y1 = cos(1*t)+1, z1 = log(1+t+1);
+    double x10= sin(10*t)+10, y10= cos(10*t)+100, z10= log(10+t+1);
+    double ans = sqrt((x1-x10)*(x1-x10)+(y1-y10)*(y1-y10)+(z1-z10)*(z1-z10));
+    cout << fixed << setprecision(10) << -ans << endl;
+    return 0;
+}
+END_SNIPPET
+BEGIN_SNIPPET
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+    auto t = 5;
+    cout << fixed << setprecision(10) << 0.0 << endl;
+    return 0;
+}
+END_SNIPPET
+BEGIN_SNIPPET
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+    auto t = 5;
+    cout << "1e18" << endl;
+    return 0;
+}
+END_SNIPPET
+BEGIN_SNIPPET
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+    auto t = 5;
+    double x1 = sin(1*t)+1, y1 = cos(1*t)+1, z1 = log(1+t+1);
+    double x10= sin(10*t)+10, y10= cos(10*t)+100, z10= log(10+t+1);
+    double ans = sqrt((x1-x10)*(x1-x10)+(y1-y10)*(y1-y10)+(z1-z10)*(z1-z10));
+    cerr << "Shortest Distance = " << fixed << setprecision(10) << ans << endl;
+    return 0;
+}
+END_SNIPPET
+BEGIN_SNIPPET
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+    auto t = 5;
+    double x1 = sin(1*t)+1, y1 = cos(1*t)+1, z1 = log(1+t+1);
+    double x10= sin(10*t)+10, y10= cos(10*t)+100, z10= log(10+t+1);
+    double ans = sqrt((x1-x10)*(x1-x10)+(y1-y10)*(y1-y10)+(z1-z10)*(z1-z10));
+    printf("Step1=%.2f Step2=%.2f Final=%.10f\n", 3.14, 2.71, ans);
+    return 0;
+}
+END_SNIPPET
+BEGIN_SNIPPET
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+    int t = 5;
+    double X[11], Y[11], Z[11];
+    for(int i = 1; i <= 10; i++) {
+        X[i] = sin(i * t) + i;
+        Y[i] = cos(i * t) + i * i;
+        Z[i] = log(i + t + 1);
+    }
+    double dist[11][11];
+    for(int i = 1; i <= 10; i++)
+        for(int j = 1; j <= 10; j++) {
+            if(i == j) dist[i][j] = 0;
+            else dist[i][j] = sqrt(
+                (X[i]-X[j])*(X[i]-X[j]) +
+                (Y[i]-Y[j])*(Y[i]-Y[j]) +
+                (Z[i]-Z[j])*(Z[i]-Z[j])
+            );
+        }
+    for(int k = 1; k <= 10; k++)
+        for(int i = 1; i <= 10; i++)
+            for(int j = 1; j <= 10; j++)
+                if(dist[i][j] > dist[i][k] + dist[k][j])
+                    dist[i][j] = dist[i][k] + dist[k][j];
+    cout << fixed << setprecision(10) << dist[1][10] << endl;
+    return 0;
+}
+END_SNIPPET
+BEGIN_SNIPPET
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+    auto t = 5;
+    double x1 = sin(1*t)+1, y1 = cos(1*t)+1, z1 = log(1+t+1);
+    double x10= sin(10*t)+10, y10= cos(10*t)+100, z10= log(10+t+1);
+    double ans = abs(x1-x10) + abs(y1-y10) + abs(z1-z10);
+    cout << fixed << setprecision(10) << ans << endl;
+    return 0;
+}
+END_SNIPPET
+BEGIN_SNIPPET
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+    auto t = 1000000;
+    vector<tuple<double,double,double>> V(11);
+    for(int i = 1; i <= 10; i++) {
+        double x = sin(i * t) + i;
+        double y = cos(i * t) + i * i;
+        double z = log(i + t + 1);
+        V[i] = {x, y, z};
+    }
+    auto [x1,y1,z1] = V[1];
+    auto [x10,y10,z10] = V[10];
+    double d = sqrt((x1-x10)*(x1-x10)+(y1-y10)*(y1-y10)+(z1-z10)*(z1-z10));
+    cout << fixed << setprecision(10) << d << endl;
+    return 0;
+}
+END_SNIPPET
+BEGIN_SNIPPET
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+    auto t = -1000000;
+    double x1 = sin(1*t)+1, y1 = cos(1*t)+1, z1 = log(1+t+1);
+    double x10= sin(10*t)+10, y10= cos(10*t)+100, z10= log(10+t+1);
+    double ans = sqrt((x1-x10)*(x1-x10)+(y1-y10)*(y1-y10)+(z1-z10)*(z1-z10));
+    cout << fixed << setprecision(10) << ans << endl;
+    return 0;
+}
+END_SNIPPET
+BEGIN_SNIPPET
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+    int t = 5;
+    throw runtime_error("oops");
+    cout << 42.0 << endl;
+    return 0;
+}
+END_SNIPPET
+BEGIN_SNIPPET
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+    int t = 5;
+    exit(1);
+    cout << 42.0 << endl;
+    return 0;
+}
+END_SNIPPET
+BEGIN_SNIPPET
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+    int t = 5;
+    vector<int> v(1000000000LL);
+    cout << v[0] << endl;
+    return 0;
+}
+END_SNIPPET
+BEGIN_SNIPPET
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+    int t = 5;
+    double x1 = sin(1*t)+1, y1 = cos(1*t)+1, z1 = log(1+t+1);
+    double x10= sin(10*t)+10, y10= cos(10*t)+100, z10= log(10+t+1);
+    double ans = sqrt((x1-x10)*(x1-x10)+(y1-y10)*(y1-y10)+(z1-z10)*(z1-z10));
+    cout << fixed << setprecision(10) << ans << endl;
+    return 0;
+}
+END_SNIPPET
